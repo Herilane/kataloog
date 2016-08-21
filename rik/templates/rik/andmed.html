@@ -1,0 +1,23 @@
+{% extends 'rik/avaleht.html' %}
+
+{% block title %} {{ oy_andmed.nimi }} {% endblock %}
+
+{% block content %}
+
+		<div class="content">
+			<h4>Registrikood: </h4> <p>{{ oy_andmed.regkood }}</p>
+			<h4>Nimi: </h4> <p>{{ oy_andmed.nimi }}</p>
+			<h4>Asutamise kuupäev: </h4> <p>{{ oy_andmed.asutamiskp }}</p>
+			<h4>Kogukapital: </h4> <p>{{ oy_andmed.kogukapital }}</p>
+		</div>
+
+		{% for osanik in oy_osanikud %}
+		<div class="content">
+			<h4>Osaniku nimi:</h4> <p>{{ osanik }}</p>
+			<h4>Osakapital:</h4> <p>{{ osanik.osakapital }}</p>
+			<h4>Asutaja:</h4> <p>{% if osanik.asutaja %}Jah{% elif not osanik.asutaja %}Ei{% endif %}</p>
+		</div>
+		{% endfor %}
+
+{% endblock %}
+

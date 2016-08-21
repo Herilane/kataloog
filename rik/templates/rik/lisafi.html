@@ -1,0 +1,13 @@
+{% extends 'rik/avaleht.html' %}
+
+{% block content %}
+	<h1>Uus füüsiline isik</h1>
+
+	<form method="POST" class="lisamine"> {% csrf_token %}
+		{{ form.as_p }}
+		<button type="submit" class="save btn btn-default">Salvesta</button>
+	</form>
+
+{% endblock %}
+
+

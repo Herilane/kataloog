@@ -1,0 +1,12 @@
+{% extends 'rik/avaleht.html' %}
+
+{% block content %}
+
+	{% for osayhing in osayhingud %}
+		<div class="content">
+			<h4> <a href="{% url 'andmed' osayhing.pk %}">Nimi: {{ osayhing.nimi }} <br> Registrikood: {{ osayhing.regkood }}</a></h4>
+		</div>
+	{% endfor %}
+{% endblock %}
+
+

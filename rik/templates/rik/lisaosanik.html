@@ -1,0 +1,16 @@
+{% extends 'rik/avaleht.html' %}
+
+{% block content %}
+	
+	<div class="content">
+		<h3>Uus osanik</h3>
+		<p>{{ message }}<p>
+		<form method="POST" class="osayhing-form"> {% csrf_token %}
+			{{ form.as_p }}
+			<button type="submit" class="save btn btn-default">Salvesta</button>
+		</form>
+	</div>
+
+{% endblock %}
+
+
