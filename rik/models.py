@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 from django.db import models
 from django.core.validators import MinLengthValidator, MinValueValidator
-from django.utils import timezone
 from rik.utils import *
 
 class fyysilineIsik(models.Model):
