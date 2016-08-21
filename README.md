@@ -1,12 +1,12 @@
-Ärikataloog
+#h1 Ärikataloog
+#h2 Proovitöö.
 
-Proovitöö.
-
+#h3 Eeldused
 Rakenduse paigaldamiseks vajalik tarkvara on Django.
 
 Django==1.10
 
-Installerimine
+#h3 Installerimine
 
 1. virtualenv
 Soovituslik komponent tarkvara installeerimiseks: 
