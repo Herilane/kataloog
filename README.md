@@ -15,10 +15,12 @@ Django==1.10
   Lae lähtekood oma töölauale:
   $ cd /path/to/your/workspace
   $ git clone git://github.com/Herilane/kataloog.git
+
   Tekkinud kausta saab luua virtuaalkeskkonna käsuga:
   virtualenv --python=python3.5 minu_keskkond
+  
   Django paigaldamiseks kasutada käsku:
-  pip install Django==1.10 
+  'pip install Django==1.10'
 
 * ### Andmebaasi käivitamine
   Andmebaasiks on selle töö raames ette nähtud Sqlite3. Andmebaasi kasutamiseks käivitada järgnevad käsud:
