@@ -1,5 +1,4 @@
-# Ärikataloog
-## Proovitöö.
+# Ärikataloog: proovitöö
 
 ## Eeldused
 Rakenduse paigaldamiseks vajalik tarkvara on Django.
@@ -28,7 +27,7 @@ Django==1.10
 * ### Andmebaasi testandmetega täitmine
   Testandmed asuvad failis dummy.sql. Sisestada tuleb nad andmebaasi käsuga sqlite3 db.sqlite3 < dummy.sql.
 
-* ### Veebirakenduse jooksutamine lokaalselt:
+* ### Veebirakenduse jooksutamine lokaalselt
   Veebirakendus käivitada käsuga:
   $ python manage.py runserver
 
