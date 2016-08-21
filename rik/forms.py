@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 from django import forms
 from .models import osayhing, osanik, fyysilineIsik
 from django.template.loader import render_to_string
