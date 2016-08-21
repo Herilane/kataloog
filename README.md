@@ -9,29 +9,27 @@ Django==1.10
 ## Installerimine
 
 * ### virtualenv
-Soovituslik komponent tarkvara installeerimiseks: 
-$ [sudo] pip install virtualenv
+  Soovituslik komponent tarkvara installeerimiseks: 
+  $ [sudo] pip install virtualenv
 
 * ### Lähtekoodi laadimine
-Lae lähtekood oma töölauale:
-$ cd /path/to/your/workspace
-$ git clone git://github.com/Herilane/kataloog.git
+  Lae lähtekood oma töölauale:
+  $ cd /path/to/your/workspace
+  $ git clone git://github.com/Herilane/kataloog.git
+  Tekkinud kausta saab luua virtuaalkeskkonna käsuga:
+  virtualenv --python=python3.5 minu_keskkond
+  Django paigaldamiseks kasutada käsku:
+  pip install Django==1.10 
 
-Tekkinud kausta saab luua virtuaalkeskkonna käsuga:
-virtualenv --python=python3.5 minu_keskkond
+* ### Andmebaasi käivitamine
+  Andmebaasiks on selle töö raames ette nähtud Sqlite3. Andmebaasi kasutamiseks käivitada järgnevad käsud:
+  $ python manage.py migrate
 
-Django paigaldamiseks kasutada käsku:
-pip install Django==1.10 
+* ### Andmebaasi testandmetega täitmine
+  Testandmed asuvad failis dummy.sql. Sisestada tuleb nad andmebaasi käsuga sqlite3 db.sqlite3 < dummy.sql.
 
-* ### H4 Andmebaasi käivitamine
-Andmebaasiks on selle töö raames ette nähtud Sqlite3. Andmebaasi kasutamiseks käivitada järgnevad käsud:
-$ python manage.py migrate
+* ### Veebirakenduse jooksutamine lokaalselt:
+  Veebirakendus käivitada käsuga:
+  $ python manage.py runserver
 
-* ### H4 Andmebaasi testandmetega täitmine
-Testandmed asuvad failis dummy.sql. Sisestada tuleb nad andmebaasi käsuga sqlite3 db.sqlite3 < dummy.sql.
-
-* ### H4 Veebirakenduse jooksutamine lokaalselt:
-Veebirakendus käivitada käsuga:
-$ python manage.py runserver
-
-Aadressil http://localhost:8000 leiab toimiva rakenduse.
+  Aadressil http://localhost:8000 leiab toimiva rakenduse.
